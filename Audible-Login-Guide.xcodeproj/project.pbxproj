@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		AD20DFB92043DC9900D16D26 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20DFB82043DC9900D16D26 /* LoginCell.swift */; };
 		AD217BA9204203730090A841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BA8204203730090A841 /* AppDelegate.swift */; };
-		AD217BAB204203730090A841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BAA204203730090A841 /* ViewController.swift */; };
+		AD217BAB204203730090A841 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BAA204203730090A841 /* LoginController.swift */; };
 		AD217BB0204203730090A841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD217BAF204203730090A841 /* Assets.xcassets */; };
 		AD217BB3204203730090A841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD217BB1204203730090A841 /* LaunchScreen.storyboard */; };
 		AD217BBB204209070090A841 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBA204209070090A841 /* PageCell.swift */; };
 		AD217BBD204218010090A841 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBC204218010090A841 /* Page.swift */; };
 		AD217BBF2042A2B40090A841 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBE2042A2B40090A841 /* Extensions.swift */; };
+		AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31E72044ABCB00377212 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD20DFB82043DC9900D16D26 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		AD217BA5204203730090A841 /* Audible-Login-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audible-Login-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD217BA8204203730090A841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD217BAA204203730090A841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD217BAA204203730090A841 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AD217BAF204203730090A841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD217BB2204203730090A841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD217BB4204203730090A841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD217BBA204209070090A841 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		AD217BBC204218010090A841 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AD217BBE2042A2B40090A841 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AD2B31E72044ABCB00377212 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AD217BA8204203730090A841 /* AppDelegate.swift */,
-				AD217BAA204203730090A841 /* ViewController.swift */,
+				AD217BAA204203730090A841 /* LoginController.swift */,
 				AD217BAF204203730090A841 /* Assets.xcassets */,
 				AD217BB1204203730090A841 /* LaunchScreen.storyboard */,
 				AD217BB4204203730090A841 /* Info.plist */,
@@ -69,6 +71,7 @@
 				AD217BBC204218010090A841 /* Page.swift */,
 				AD217BBE2042A2B40090A841 /* Extensions.swift */,
 				AD20DFB82043DC9900D16D26 /* LoginCell.swift */,
+				AD2B31E72044ABCB00377212 /* MainNavigationController.swift */,
 			);
 			path = "Audible-Login-Guide";
 			sourceTree = "<group>";
@@ -145,9 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD217BBF2042A2B40090A841 /* Extensions.swift in Sources */,
-				AD217BAB204203730090A841 /* ViewController.swift in Sources */,
+				AD217BAB204203730090A841 /* LoginController.swift in Sources */,
 				AD217BA9204203730090A841 /* AppDelegate.swift in Sources */,
 				AD217BBD204218010090A841 /* Page.swift in Sources */,
+				AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */,
 				AD217BBB204209070090A841 /* PageCell.swift in Sources */,
 				AD20DFB92043DC9900D16D26 /* LoginCell.swift in Sources */,
 			);
