@@ -16,6 +16,8 @@
 		AD217BBD204218010090A841 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBC204218010090A841 /* Page.swift */; };
 		AD217BBF2042A2B40090A841 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBE2042A2B40090A841 /* Extensions.swift */; };
 		AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31E72044ABCB00377212 /* MainNavigationController.swift */; };
+		AD2B31EA2044D4D900377212 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31E92044D4D900377212 /* HomeController.swift */; };
+		AD2B31EC2044D63F00377212 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		AD217BBC204218010090A841 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AD217BBE2042A2B40090A841 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD2B31E72044ABCB00377212 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		AD2B31E92044D4D900377212 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				AD217BBE2042A2B40090A841 /* Extensions.swift */,
 				AD20DFB82043DC9900D16D26 /* LoginCell.swift */,
 				AD2B31E72044ABCB00377212 /* MainNavigationController.swift */,
+				AD2B31E92044D4D900377212 /* HomeController.swift */,
+				AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */,
 			);
 			path = "Audible-Login-Guide";
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 				AD217BAB204203730090A841 /* LoginController.swift in Sources */,
 				AD217BA9204203730090A841 /* AppDelegate.swift in Sources */,
 				AD217BBD204218010090A841 /* Page.swift in Sources */,
+				AD2B31EA2044D4D900377212 /* HomeController.swift in Sources */,
 				AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */,
+				AD2B31EC2044D63F00377212 /* UserDefaults+Helpers.swift in Sources */,
 				AD217BBB204209070090A841 /* PageCell.swift in Sources */,
 				AD20DFB92043DC9900D16D26 /* LoginCell.swift in Sources */,
 			);

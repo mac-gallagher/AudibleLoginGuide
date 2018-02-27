@@ -202,6 +202,9 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
         mainNavigationController.viewControllers = [HomeController()]
         
         dismiss(animated: true, completion: nil)
+        
+        UserDefaults.standard.setIsLoggedIn(value: true)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
