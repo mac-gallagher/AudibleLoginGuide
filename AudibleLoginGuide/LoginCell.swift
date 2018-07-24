@@ -1,6 +1,6 @@
 //
 //  LoginCell.swift
-//  Audible-Login-Guide
+//  AudibleLoginGuide
 //
 //  Created by Mac Gallagher on 2/26/18.
 //  Copyright © 2018 Mac Gallagher. All rights reserved.
@@ -10,13 +10,15 @@ import UIKit
 
 class LoginCell: UICollectionViewCell {
     
-    let logoImageView: UIImageView = {
+    weak var delegate: LoginControllerDelegate?
+    
+    private let logoImageView: UIImageView = {
         let image = UIImage(named: "logo")
         let imageView = UIImageView(image:image)
         return imageView
     }()
     
-    let emailTextField: LeftPaddedTextField = {
+    private let emailTextField: LeftPaddedTextField = {
         let textField = LeftPaddedTextField()
         textField.placeholder = "Enter email"
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -25,7 +27,7 @@ class LoginCell: UICollectionViewCell {
         return textField
     }()
     
-    let passwordTextField: LeftPaddedTextField = {
+    private let passwordTextField: LeftPaddedTextField = {
         let textField = LeftPaddedTextField()
         textField.placeholder = "Enter password"
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -34,7 +36,7 @@ class LoginCell: UICollectionViewCell {
         return textField
     }()
     
-    lazy var loginButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .orange
         button.setTitle("Log in", for: .normal)
@@ -43,15 +45,21 @@ class LoginCell: UICollectionViewCell {
         return button
     }()
     
-    weak var delegate: LoginControllerDelegate?
-    
-    @objc func handleLogin() {
+    @objc private func handleLogin() {
         delegate?.finishLoggingIn()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        sharedInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        sharedInit()
+    }
+    
+    private func sharedInit() {
         addSubview(logoImageView)
         addSubview(emailTextField)
         addSubview(passwordTextField)
@@ -59,17 +67,9 @@ class LoginCell: UICollectionViewCell {
         
         _ = logoImageView.anchor(centerYAnchor, left: nil, bottom: nil, right: nil, topConstant: -230, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 160, heightConstant: 160)
         logoImageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        
         _ = emailTextField.anchor(logoImageView.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 8, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
-        
         _ = passwordTextField.anchor(emailTextField.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 16, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
-        
         _ = loginButton.anchor(passwordTextField.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 16, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
-        
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -83,6 +83,7 @@ class LeftPaddedTextField: UITextField {
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(x: bounds.origin.x + 10, y: bounds.origin.y, width: bounds.width - 10, height: bounds.height)
     }
+    
 }
 
 

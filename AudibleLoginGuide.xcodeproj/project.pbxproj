@@ -13,11 +13,9 @@
 		AD217BB0204203730090A841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD217BAF204203730090A841 /* Assets.xcassets */; };
 		AD217BB3204203730090A841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD217BB1204203730090A841 /* LaunchScreen.storyboard */; };
 		AD217BBB204209070090A841 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBA204209070090A841 /* PageCell.swift */; };
-		AD217BBD204218010090A841 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBC204218010090A841 /* Page.swift */; };
 		AD217BBF2042A2B40090A841 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD217BBE2042A2B40090A841 /* Extensions.swift */; };
 		AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31E72044ABCB00377212 /* MainNavigationController.swift */; };
 		AD2B31EA2044D4D900377212 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31E92044D4D900377212 /* HomeController.swift */; };
-		AD2B31EC2044D63F00377212 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +27,9 @@
 		AD217BB2204203730090A841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD217BB4204203730090A841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD217BBA204209070090A841 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
-		AD217BBC204218010090A841 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AD217BBE2042A2B40090A841 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD2B31E72044ABCB00377212 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AD2B31E92044D4D900377212 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,19 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				AD217BA8204203730090A841 /* AppDelegate.swift */,
+				AD2B31E72044ABCB00377212 /* MainNavigationController.swift */,
 				AD217BAA204203730090A841 /* LoginController.swift */,
+				AD2B31E92044D4D900377212 /* HomeController.swift */,
+				AD217BBA204209070090A841 /* PageCell.swift */,
+				AD20DFB82043DC9900D16D26 /* LoginCell.swift */,
+				AD217BBE2042A2B40090A841 /* Extensions.swift */,
 				AD217BAF204203730090A841 /* Assets.xcassets */,
 				AD217BB1204203730090A841 /* LaunchScreen.storyboard */,
-				AD217BB4204203730090A841 /* Info.plist */,
-				AD217BBA204209070090A841 /* PageCell.swift */,
-				AD217BBC204218010090A841 /* Page.swift */,
-				AD217BBE2042A2B40090A841 /* Extensions.swift */,
-				AD20DFB82043DC9900D16D26 /* LoginCell.swift */,
-				AD2B31E72044ABCB00377212 /* MainNavigationController.swift */,
-				AD2B31E92044D4D900377212 /* HomeController.swift */,
-				AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */,
+				AD9D23492106E0780018F0DE /* Supporting Files */,
 			);
 			path = AudibleLoginGuide;
+			sourceTree = "<group>";
+		};
+		AD9D23492106E0780018F0DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD217BB4204203730090A841 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +158,8 @@
 				AD217BBF2042A2B40090A841 /* Extensions.swift in Sources */,
 				AD217BAB204203730090A841 /* LoginController.swift in Sources */,
 				AD217BA9204203730090A841 /* AppDelegate.swift in Sources */,
-				AD217BBD204218010090A841 /* Page.swift in Sources */,
 				AD2B31EA2044D4D900377212 /* HomeController.swift in Sources */,
 				AD2B31E82044ABCB00377212 /* MainNavigationController.swift in Sources */,
-				AD2B31EC2044D63F00377212 /* UserDefaults+Helpers.swift in Sources */,
 				AD217BBB204209070090A841 /* PageCell.swift in Sources */,
 				AD20DFB92043DC9900D16D26 /* LoginCell.swift in Sources */,
 			);

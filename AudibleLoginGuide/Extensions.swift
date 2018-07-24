@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  Audible-Login-Guide
+//  AudibleLoginGuide
 //
 //  Created by Mac Gallagher on 2/25/18.
 //  Copyright © 2018 Mac Gallagher. All rights reserved.
@@ -11,12 +11,10 @@ import UIKit
 extension UIView {
     
     func anchorToTop(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil) {
-        
         anchorWithConstantsToTop(top, left: left, bottom: bottom, right: right, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0)
     }
     
     func anchorWithConstantsToTop(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0) {
-        
         _ = anchor(top, left: left, bottom: bottom, right: right, topConstant: topConstant, leftConstant: leftConstant, bottomConstant: bottomConstant, rightConstant: rightConstant)
     }
     
@@ -52,6 +50,22 @@ extension UIView {
         anchors.forEach({$0.isActive = true})
         
         return anchors
+    }
+    
+}
+
+extension UserDefaults {
+    
+    enum UserDefaultsKeys: String {
+        case isLoggedIn
+    }
+    
+    func setIsLoggedIn(value: Bool) {
+        set(value, forKey: UserDefaultsKeys.isLoggedIn.rawValue)
+    }
+    
+    func isLoggedIn() -> Bool{
+        return bool(forKey: UserDefaultsKeys.isLoggedIn.rawValue)
     }
     
 }
