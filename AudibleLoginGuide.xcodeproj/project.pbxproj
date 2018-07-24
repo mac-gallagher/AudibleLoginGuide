@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		AD20DFB82043DC9900D16D26 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
-		AD217BA5204203730090A841 /* Audible-Login-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audible-Login-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD217BA5204203730090A841 /* AudibleLoginGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudibleLoginGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD217BA8204203730090A841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD217BAA204203730090A841 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AD217BAF204203730090A841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		AD217B9C204203730090A841 = {
 			isa = PBXGroup;
 			children = (
-				AD217BA7204203730090A841 /* Audible-Login-Guide */,
+				AD217BA7204203730090A841 /* AudibleLoginGuide */,
 				AD217BA6204203730090A841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		AD217BA6204203730090A841 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD217BA5204203730090A841 /* Audible-Login-Guide.app */,
+				AD217BA5204203730090A841 /* AudibleLoginGuide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD217BA7204203730090A841 /* Audible-Login-Guide */ = {
+		AD217BA7204203730090A841 /* AudibleLoginGuide */ = {
 			isa = PBXGroup;
 			children = (
 				AD217BA8204203730090A841 /* AppDelegate.swift */,
@@ -79,15 +79,15 @@
 				AD2B31E92044D4D900377212 /* HomeController.swift */,
 				AD2B31EB2044D63F00377212 /* UserDefaults+Helpers.swift */,
 			);
-			path = "Audible-Login-Guide";
+			path = AudibleLoginGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD217BA4204203730090A841 /* Audible-Login-Guide */ = {
+		AD217BA4204203730090A841 /* AudibleLoginGuide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD217BB7204203730090A841 /* Build configuration list for PBXNativeTarget "Audible-Login-Guide" */;
+			buildConfigurationList = AD217BB7204203730090A841 /* Build configuration list for PBXNativeTarget "AudibleLoginGuide" */;
 			buildPhases = (
 				AD217BA1204203730090A841 /* Sources */,
 				AD217BA2204203730090A841 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "Audible-Login-Guide";
+			name = AudibleLoginGuide;
 			productName = "Audible-Login-Guide";
-			productReference = AD217BA5204203730090A841 /* Audible-Login-Guide.app */;
+			productReference = AD217BA5204203730090A841 /* AudibleLoginGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Mac Gallagher";
 				TargetAttributes = {
 					AD217BA4204203730090A841 = {
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD217BA0204203730090A841 /* Build configuration list for PBXProject "Audible-Login-Guide" */;
+			buildConfigurationList = AD217BA0204203730090A841 /* Build configuration list for PBXProject "AudibleLoginGuide" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD217BA4204203730090A841 /* Audible-Login-Guide */,
+				AD217BA4204203730090A841 /* AudibleLoginGuide */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +193,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -200,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -227,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -257,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -278,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -292,9 +296,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYZ8Y2U8DB;
-				INFOPLIST_FILE = "Audible-Login-Guide/Info.plist";
+				INFOPLIST_FILE = AudibleLoginGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.macgallagher.Audible-Login-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macgallagher.AudibleLoginGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,9 +311,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYZ8Y2U8DB;
-				INFOPLIST_FILE = "Audible-Login-Guide/Info.plist";
+				INFOPLIST_FILE = AudibleLoginGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.macgallagher.Audible-Login-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macgallagher.AudibleLoginGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD217BA0204203730090A841 /* Build configuration list for PBXProject "Audible-Login-Guide" */ = {
+		AD217BA0204203730090A841 /* Build configuration list for PBXProject "AudibleLoginGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD217BB5204203730090A841 /* Debug */,
@@ -328,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD217BB7204203730090A841 /* Build configuration list for PBXNativeTarget "Audible-Login-Guide" */ = {
+		AD217BB7204203730090A841 /* Build configuration list for PBXNativeTarget "AudibleLoginGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD217BB8204203730090A841 /* Debug */,
